@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Centro de Biotecnologia Agropecuaria
+Análisis y Desarrollo de Software
+Ficha: 2470980
+Autor: Joel Bautista
+        Lina Martinez
+        Oscar Pinzon
+Fecha de creación: 14/04/2022
+Fecha de actualización: 18/04/2022
+SENA CBA_Mosquera-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALCAS.A.S</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="icon" href="/img/logo.jpg">
+    </head>
+    <body>
+        
+        <!--este es el contenedor de toda la hoja-->
+        <div class="container-fluid">
+            
+            
+            <!--este es el contenedor de toda la cabeza comenzando por logo, titulo, menu desplegable,menu de formulario-->
+            <header class="row ">
+               
+               
+                <!--aca se encuentra el logo de la empresa-->
+                <div class="logoheader col-sm-4 col-md-4 col-lg-4"><img  class="imgl" src="./img/logo.jpg" alt="logo" ></div>
+               
+               
+                <!--aca se encuentra el titulo de la empresa-->
+               <div class="titulo col-sm-3 col-md-3 col-lg-3"> <h3>ALCA - Diseño & Espacios S.A.S</h3></div>
+               
+                
+                <!--aca se encontrara el boton para ingresar al menu-->
+                <div class=" d-flex justify-content-end desplegable col-sm-3 col-md-3 col-lg-3">
+                    <a class="btn btn-sm dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img class="menu" src="./img/menu.png" alt="menu"  >
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item1" href="./sillas.html"><img src="./img/silla.png" alt="silla" width="150" height="150"  >sillas</a>
+                      <a class="dropdown-item2" href="./mesas.html"><img src="./img/meas.jpg" alt="mesas" width="150" height="150" >mesas</a>
+                      <a class="dropdown-item3" href="./Sofas.html"><img src="./img/sofas.jpeg" alt="sofas" width="150" height="150" >sofas</a>
+                      <a class="dropdown-item4" href="./Armarios.html"><img src="./img/armariomenu.png"  alt="armarios" width="150" height="150" >armarios</a>
+                      <a class="dropdown-item5" href="./Escritorios.html"><img src="./img/escritoriomenu.png" alt="escritorios"  width="150" height="150">escritorios</a>
+                      <a class="dropdown-item6" href="./Comedores.html"><img src="./img/comedormenu.png" alt="comedores"  width="150" height="150">comedores</a>
+                    </div>
+                </div>
+                 
+                 
+                  <!--aca se encontrara el menu del formulario-->
+                  <a class="btn col-sm-2 col-md-2 col-lg-2 formulario d-flex justify-content-end" href="./ingresar.html" role="button"><img class="um" src="./img/usuario.png" alt="usuario" ></a>
+            </header>
+
+
+            <!--aca se encontrara toda la barra de navegacion-->
+            <nav class="row">
+                <!--aca se encontrara todo de lo mas buscado-->
+               
+                <h3 class="titulo col-6 col-md-3">Mas Buscado</h3>
+
+                <!--aca se encontrara todo lo de la barra de busqueda-->
+
+                <div class="field col-lg-6 col-md-6 col-sm-6" id="searchform">
+                    <input class="barra" type="text" id="searchterm" placeholder="que estas buscando?" />
+                    <button type="button" id="search"><img src="./img/lupa.png" alt="lupa"></button>
+                  </div>
+                  
+                  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+            </nav>
+
+            <!--aca se encontrara todo lo relacionado con las imagenes-->
+            
+            <div class="row">
+                <div class="imaen1 col-lg-3 col-md-3 col-sm-6"><img src="./img/img1.png" alt="imagen1" ></div>
+                <div class="imaen2 col-lg-3 col-md-3 col-sm-6"><img src="./img/img2.png" alt="imagen2"></div>
+                <div class="imaen3 col-lg-3 col-md-3 col-sm-6"><img src="./img/img3.png" alt="imagen3"></div>
+                <div class="imaen4 col-lg-3 col-md-3 col-sm-6"><img src="./img/img4.png" alt="imagen4"></div>
+            </div>
+
+            <!--aca se encontrara todo lo relacionado con el article y el aside-->
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 d-sm-none d-md-block">
+                    <div class="row"></div>
+                    <h1 class="mas buscado col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">Que Hacemos</h1>
+                    <div class="youtube col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center"> <img src="./img/quehacemos.png" alt="que hacemos"></div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="redes">
+                        <h1 class="redessociales ">Redes Sociales</h1>
+                        <div class="fti d-flex  flex-row "><img src="./img/facebook.png" alt="facebook"> <h1 class="facebooktex">Alca ds S.A.S</h1></div>
+                        <div class="fti d-flex  flex-row "><img src="./img/twitter.png" alt="twitter"> <h1 class="facebooktex">Alca ds S.A.S</h1></div>
+                        <div class="ins d-flex  flex-row"><img src="./img/instagram.png" alt="instagram"> <h1 class="facebooktex">Alca ds S.A.S</h1></div>
+                    </div>
+                </div>
+            </div>  
+        
+            <!--aca encontraras todo lo del footer-->
+
+            <footer class="row">
+                <!--aca se vera la palabra realizado-->
+                <h2 class="realizado logo col-4"> Realizado</h2>
+
+                <!--Aca se vera quienes lo realizo-->
+                <h3 class="quienlogo col-6">Joel Esteban Bautista Nuñez, 
+                    Oscar David Pinzon Ferreira, 
+                    Lina Jhoanna Martínez Garzón.
+                </h3>
+
+                <!--Aca se vera el logo delfooter-->
+                <div class="col-2  d-flex justify-content-end"><img class="logofooter" src="./img/logo.jpg" alt="logofooter">
+                </div>            
+            </footer>
+        
+        
+        </div>
+        <!--scripts separate JS Bootstrap5 -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>

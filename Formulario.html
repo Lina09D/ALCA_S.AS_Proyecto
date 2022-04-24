@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Centro de Biotecnologia Agropecuaria
+Análisis y Desarrollo de Software
+Ficha: 2470980
+Autor: Joel Bautista
+        Lina Martinez
+        Oscar Pinzon
+Fecha de creación: 14/04/2022
+Fecha de actualización: 18/04/2022
+SENA CBA_Mosquera-->
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FORMULARIO</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/index.css">
+      <link rel="icon" href="/img/logo.jpg">
+  </head>
+  <body>
+              <!--este es el contenedor de toda la hoja-->
+          <div class="container-fluid">
+              
+                          <!--este es el contenedor de toda la cabeza comenzando por logo, titulo, menu desplegable,menu de formulario-->
+                          <header class="row ">
+                
+                
+                            <!--aca se encuentra el logo de la empresa-->
+                            <div class="logoheader col-sm-4 col-md-4 col-lg-4"><img  class="imgl" src="./img/logo.jpg" alt="logo" ></div>
+                          
+                          
+                            <!--aca se encuentra el titulo de la empresa-->
+                          <div class="titulo col-sm-3 col-md-3 col-lg-3"> <h3>ALCA - Diseño & Espacios S.A.S</h3></div>
+                          
+                            
+                            <!--aca se encontrara el boton para ingresar al menu-->
+                            <div class=" d-flex justify-content-end desplegable col-sm-3 col-md-3 col-lg-3">
+                                <a class="btn btn-sm dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="menu" src="./img/menu.png" alt="menu"  >
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item1" href="./sillas.html"><img src="./img/silla.png" alt="silla" width="150" height="150"  >sillas</a>
+                                  <a class="dropdown-item2" href="./mesas.html"><img src="./img/meas.jpg" alt="mesas" width="150" height="150" >mesas</a>
+                                  <a class="dropdown-item3" href="./Sofas.html"><img src="./img/sofas.jpeg" alt="sofas" width="150" height="150" >sofas</a>
+                                  <a class="dropdown-item4" href="./Armarios.html"><img src="./img/armariomenu.png"  alt="armarios" width="150" height="150" >armarios</a>
+                                  <a class="dropdown-item5" href="./Escritorios.html"><img src="./img/escritoriomenu.png" alt="escritorios"  width="150" height="150">escritorios</a>
+                                  <a class="dropdown-item6" href="./Comedores.html"><img src="./img/comedormenu.png" alt="comedores"  width="150" height="150">comedores</a>
+                                </div>
+                            </div>
+                            
+                            
+                              <!--aca se encontrara el menu del formulario-->
+                              <a class="btn col-sm-2 col-md-2 col-lg-2 formulario d-flex justify-content-end" href="./ingresar.html" role="button"><img class="um" src="./img/usuario.png" alt="usuario" ></a>
+                        </header>
+            
+
+
+              <!--aca se encuentra el logo usuario-->
+
+              <div class="usuarioform ">
+                <img src="img/usuario.png" alt="usuario" class="rounded mx-auto d-block">
+            </div>
+
+              <!--aca se encuentra el formulario-->
+
+              <!-- boton de Nombre-->
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Nombre</label>
+              </div>
+
+              <!-- boton de Contraseña-->
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Contraseña</label>
+              </div>
+
+                <!-- boton de Nombre de usuario-->
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Usuario</label>
+                </div>
+
+              <!-- boton de Email-->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                  </div>
+
+                <!-- boton de Ciudad-->
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Pais</label>
+                </div>
+                <!--aca se encontraran los botones-->
+
+                <a href="./ingresar.html" class="btn btn-primary btn-lg btn-block " aria-current="page">Iniciar sesion</a>
+                <a href="./Formulario.html" class="btn btn-primary btn-lg btn-block" aria-current="page">Registrarte</a>
+
+
+
+              <!--aca encontraras todo lo del footer-->
+
+              <footer class="row">
+                  <!--aca se vera la palabra realizado-->
+                  <h2 class="realizado logo col-4"> Realizado</h2>
+
+                  <!--Aca se vera quienes lo realizo-->
+                  <h3 class="quienlogo col-6">Joel Esteban Bautista Nuñez, 
+                      Oscar David Pinzon Ferreira, 
+                      Lina Jhoanna Martínez Garzón.
+                  </h3>
+
+                  <!--Aca se vera el logo delfooter-->
+                  <div class="col-2  d-flex justify-content-end"><img class="logofooter" src="./img/logo.jpg" alt="logofooter">
+                  </div>            
+              </footer>
+          </div>
+
+      <!--scripts separate JS Bootstrap5 -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  </body>
+</html>

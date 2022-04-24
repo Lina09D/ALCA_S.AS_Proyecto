@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!-- Centro de Biotecnologia Agropecuaria
+Análisis y Desarrollo de Software
+Ficha: 2470980
+Autor: Joel Bautista
+        Lina Martinez
+       
+        Oscar Pinzon
+Fecha de creación: 14/04/2022
+Fecha de actualización: 18/04/2022
+SENA CBA_Mosquera-->
+<html lang="es">
+    <head>
+        <!--Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COMEDORES</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="icon" href="img/logo.jpg">
+    </head>
+    <body>
+        <div class="container-fluid p-10">
+            <!--este es el contenedor de toda la cabeza comenzando por logo, titulo, menu desplegable,menu de formulario-->
+            <header class="row ">
+               
+               
+                <!--aca se encuentra el logo de la empresa-->
+                <div class="logoheader col-sm-4 col-md-4 col-lg-4"><img  class="imgl" src="./img/logo.jpg" alt="logo" ></div>
+               
+               
+                <!--aca se encuentra el titulo de la empresa-->
+               <div class="titulo col-sm-3 col-md-3 col-lg-3"> <h3>ALCA - Diseño & Espacios S.A.S</h3></div>
+               
+                
+                <!--aca se encontrara el boton para ingresar al menu-->
+                <div class=" d-flex justify-content-end desplegable col-sm-3 col-md-3 col-lg-3">
+                    <a class="btn btn-sm dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img class="menu" src="./img/menu.png" alt="menu"  >
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item1" href="./sillas.html"><img src="./img/silla.png" alt="silla" width="150" height="150"  >sillas</a>
+                      <a class="dropdown-item2" href="./mesas.html"><img src="./img/meas.jpg" alt="mesas" width="150" height="150" >mesas</a>
+                      <a class="dropdown-item3" href="./Sofas.html"><img src="./img/sofas.jpeg" alt="sofas" width="150" height="150" >sofas</a>
+                      <a class="dropdown-item4" href="./Armarios.html"><img src="./img/armariomenu.png"  alt="armarios" width="150" height="150" >armarios</a>
+                      <a class="dropdown-item5" href="./Escritorios.html"><img src="./img/escritoriomenu.png" alt="escritorios"  width="150" height="150">escritorios</a>
+                      <a class="dropdown-item6" href="./Comedores.html"><img src="./img/comedormenu.png" alt="comedores"  width="150" height="150">comedores</a>
+                    </div>
+                </div>
+                 
+                 
+                  <!--aca se encontrara el menu del formulario-->
+                  <a class="btn col-sm-2 col-md-2 col-lg-2 formulario d-flex justify-content-end" href="./ingresar.html" role="button"><img class="um" src="./img/usuario.png" alt="usuario" ></a>
+            </header>
+
+
+
+            <!--aca se encontrara toda la barra de navegacion-->
+            <nav class="row">
+                <!--aca se encontrara todo de lo mas buscado-->
+               
+                <h3 class="titulo col-6 col-md-3">Mas Buscado</h3>
+
+                <!--aca se encontrara todo lo de la barra de busqueda-->
+
+                <div class="field col-lg-6 col-md-6 col-sm-6" id="searchform">
+                    <input class="barra" type="text" id="searchterm" placeholder="que estas buscando?" />
+                    <button type="button" id="search"><img src="./img/lupa.png" alt="lupa"></button>
+                </div>
+                  
+                <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+            </nav>
+
+            <!--Row que contiene los elementos y su distribución según el tamaño-->
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
+                
+                <!--Se mostrará la caja de la imagen 1-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor1.png" class="card-img-top imgs" alt="...">
+                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor en madera</h5>
+                            
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 1-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 1-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen1">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+
+                </div>             
+                
+                <!--Se mostrará la caja de la imagen 2-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor2.png" class="card-img-top imgs" alt="...">
+                            </div>                        
+                            <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor en madera sincillo</h5>
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 2-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 2-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen2">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Se mostrará la caja de la imagen 3-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor3.png" class="card-img-top imgs" alt="...">
+                            </div>                        <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor Santa Martha</h5>
+
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 3-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 3-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen3">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Se mostrará la caja de la imagen 4-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor4.png" class="card-img-top imgs" alt="...">
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor  de cuatro sillas y un banco</h5>
+                            
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 4-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 4-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen4">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Se mostrará la caja de la imagen 5-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor5.png" class="card-img-top imgs" alt="...">
+                            </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor Scandia</h5>
+                        
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 5-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 5-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen5">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Se mostrará la caja de la imagen 6-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor6.png" class="card-img-top imgs" alt="...">
+                            </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor familiar</h5>
+                            
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 6-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 6-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen6">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Se mostrará la caja de la imagen 7-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor7.png" class="card-img-top imgs" alt="...">
+                            </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor  valencia 4 puestos</h5>
+                            
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 7-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 7-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen7">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Se mostrará la caja de la imagen 8-->
+                <div class="col">
+                    <div class="card">
+                        <div class="text-center">
+                            <img src="/img/comedor8.png" class="card-img-top imgs" alt="...">
+                            </div>                        
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Juego comerdor arte k</h5>
+                            
+                        </div>
+                        <!--Se mostrará la calificación en estrallas de la imagen 8-->
+                        <form>
+                            <p class="text-center clasificacion">
+                              
+                              <label class="text-warning"> ★★★★★ </label>
+                        </form>
+                        <!--Se mostrará el botón de información de la imagen 8-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagen8">
+                                + INF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 1-->
+        <div class="modal fade" id="imagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Juego comerdor en madera</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen1"></button>
+                    </div>
+                    <div class="modal-body">
+                        Es un juego de comedor la cual posee 6 sillas y el comedor
+                        que esta fabricado de madera. 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 2-->
+        <div class="modal fade" id="imagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Juego comerdor en madera sincillo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen2"></button>
+                    </div>
+                    <div class="modal-body">
+                        Es un juego de comedor madera sencillo para 4 personas.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 3-->
+        <div class="modal fade" id="imagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel3">Juego comerdor Santa Martha</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen3"></button>
+                    </div>
+                    <div class="modal-body">
+                        Es un juego de comedor bastante acojedor para su hogar con sillas
+                        acolchadas y un estilo de color que representa al mar.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!--Se mostrará el modal de la imagen 4-->
+        <div class="modal fade" id="imagen4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel4">Juego comerdor  de cuatro sillas y un banco</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen4"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este tipo de comedor posee una mesa de cristal, 4 sillas y
+                        un bamco acolchado.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 5-->
+        <div class="modal fade" id="imagen5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel5">Juego de comerdor valencia 4 puestos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen5"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este juego de comedor es estilo valencia que contiene 4 puestos y un diseño bastante moderno.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 6-->
+        <div class="modal fade" id="imagen6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel6">Juego comerdor Scandia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen6"></button>
+                    </div>
+                    <div class="modal-body">
+                        El juego de comedor Scandia posee una mesa , 4 sillas y un banco acolchables
+                        con un color gris modificable.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 7-->
+        <div class="modal fade" id="imagen7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel7">Juego comerdor familiar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen7"></button>
+                    </div>
+                    <div class="modal-body">
+                        Es un juego de comedor familiar que tiene sillas de tela,
+                        y una mesa de cristal.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Se mostrará el modal de la imagen 8-->
+        <div class="modal fade" id="imagen8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel8">Juego comerdor arte k</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="#imagen8"></button>
+                    </div>
+                    <div class="modal-body">
+                         Juego de comedor hecho con al arte k la cual posee 3 sillas,
+                         una mesa de madera y un banco acolchado.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!--aca encontraras todo lo del footer-->
+
+            <footer class="row">
+                <!--aca se vera la palabra realizado-->
+                <h2 class="realizado logo col-4"> Realizado</h2>
+
+                <!--Aca se vera quienes lo realizo-->
+                <h3 class="quienlogo col-6">Joel Esteban Bautista Nuñez, 
+                    Oscar David Pinzon Ferreira, 
+                    Lina Jhoanna Martínez Garzón.
+                </h3>
+
+                <!--Aca se vera el logo delfooter-->
+                <div class="col-2  d-flex justify-content-end"><img class="logofooter" src="./img/logo.jpg" alt="logofooter">
+                </div>            
+            </footer>
+
+        <!-- scripts  separate JS de bootstrap-->
+        <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
